@@ -1,4 +1,4 @@
-package com.ptg.employeeservice.exception;
+package com.ptg.employeeservice.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -6,14 +6,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
 public class ResourceNotFoundException extends RuntimeException{
 	
-	
-	private static final Long serialVersionUID = 1L;
+   private static final Long serialVersionUID = 1L;
 	
 	public ResourceNotFoundException(String message) {
 		
 		super(message);
 	}
-	
-
 
 }
